@@ -1,0 +1,36 @@
+title: "Vitrail"
+description: "Deploy web apps anywhere"
+url: https://vitrail.kuartz.org
+image: /assets/images/opengraph.png
+github: kuartz-org
+repository: kuartz-org/vitrail-site
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: docs
+      type: pages
+    values:
+      layout: docs
+
+redirect_from:
+  json: false

@@ -1,0 +1,14 @@
+- title: "Installation"
+  url: /docs/installation/
+
+- title: "Configuration"
+  url: /docs/configuration/
+
+- title: "Components"
+  url: /docs/components/
+  index: false
+  sections:
+    - title: "Components overview"
+      url: /docs/components/components-overview/
+    - title: "Title"
+      url: /docs/components/title/

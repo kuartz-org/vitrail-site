@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'LeagueSpartan';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/LeagueSpartan-SemiBold.otf');
+  src: url('../fonts/LeagueSpartan-SemiBold.ttf') format('truetype'),
+       url('../fonts/LeagueSpartan-SemiBold.woff2') format('woff2'),
+       url('../fonts/LeagueSpartan-SemiBold.woff') format('woff');
+  font-display: swap;
+}

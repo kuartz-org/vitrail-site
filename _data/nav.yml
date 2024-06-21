@@ -1,0 +1,6 @@
+- title: "Documentation"
+  url: /docs/
+
+- title: "Source code"
+  url: https://github.com/kuartz-org/vitrail
+  external: true

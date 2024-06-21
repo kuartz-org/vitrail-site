@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'net/http'
+require 'date'
+require 'yaml'
+
+response = Net::HTTP.get_response(URI('https://api.github.com/repos/kuartz-org/vitrail/tags'))
+
+if response.code == '200'
+
+  data = JSON.parse(response.body)
+
+  tag_name = data[0]["name"]
+
+  data = {
+    'tag_name' => tag_name,
+  }
+
+  File.write('_data/github.yml', data.to_yaml)
+
+  puts "Tag name: #{data['tag_name']}"
+
+else
+
+  puts "Error: #{response.code} #{response.message}"
+
+end
