@@ -1,0 +1,29 @@
+.hero {
+
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--space-medium);
+  padding-right: var(--space-medium);
+  padding-top: var(--space-large);
+
+  &__content {
+
+    display: flex;
+    margin-inline: auto;
+    position: relative;
+    width: min(100%, 35em);
+
+
+    img {
+      border-radius: 0.3em;
+      box-shadow: 0 0 4em var(--color-base-darkest);
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  @media(min-width: 64em) {
+    padding-left: var(--space-large);
+    padding-right: var(--space-large);
+  }
+}
