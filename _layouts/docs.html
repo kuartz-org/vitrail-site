@@ -166,6 +166,14 @@
 
 {% include footer.html %}
 
+{% if jekyll.environment == "production" %}
+  <script src="{{ site.lookbook_url }}/lookbook-assets/js/lookbook.js"></script>
+{% else %}
+  <script src="http://localhost:3000/lookbook-assets/js/lookbook.js"></script>
+{% endif %}
+
+
+
   </body>
 
 </html>
