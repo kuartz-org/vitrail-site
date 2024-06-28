@@ -1,8 +1,8 @@
 - title: "Installation"
   url: /docs/installation/
 
-- title: "Configuration"
-  url: /docs/configuration/
+# - title: "Configuration"
+#   url: /docs/configuration/
 
 - title: "Components"
   url: /docs/components/
